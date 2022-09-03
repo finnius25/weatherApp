@@ -9,15 +9,21 @@
     <title>Document</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <h1>Weather App</h1>
+    </nav>
     <div class="hero-container">
-        <div class="weatherForm">
-            <label for="searchInput"></label>
-            <input id="searchInput" type="text" >
-            <input type="button" value="Sumbit" id="submit" onclick="send()">
+        <div class="weatherFormContainer">
+            <form id="weatherForm">
+                <label for="searchInput"></label>
+                <input id="searchInput" type="text" >
+                <input type="submit" value="Submit" id="submit">
+            </form>
         </div>
         <h1 class="cityName"></h1>
+        <h4 class="weatherApiErrMessage"></h4>
         <p class="mainTemp"></p>
+        <div class="gifImageCont"><img class="bodyBgImage"></div>
     </div>
 </body>
 </html>
